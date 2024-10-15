@@ -1,0 +1,388 @@
+/* General Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  --background-color: #f5f5f5;
+  --text-color: #333;
+  --restaurant-row-bg-light: #e0e0e0;
+  --restaurant-row-text-light: #111;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.dark-theme {
+  --background-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --restaurant-row-bg-dark: #444;
+  --restaurant-row-text-dark: #fff;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ec3939;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: 10px;
+}
+
+nav ul li h1 {
+  color: #000000;
+}
+
+nav ul li a {
+  font-size: 16px;
+  padding: 10px 20px;
+  color: #e0e0e0;
+  text-decoration: none;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+#theme {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a:hover {
+  color: #ababab;
+}
+
+/* Content */
+#content {
+  margin: 100px;
+  padding: 0;
+  border: 5px solid #2f2c2c;
+  background-color: #373131;
+  border-radius: 20px;
+  height: 120vh;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  color: #edad0d;
+}
+
+label {
+  font-size: 20px;
+}
+
+input {
+  margin: 10px 0;
+  padding: 12px 20px;
+  width: 80%;
+  border-radius: 20px;
+  min-height: 44px;
+}
+
+/* Buttons */
+.SignBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  border-radius: 50px;
+  background-color: #1b1919;
+  color: #e0e0e0;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#submit {
+  padding: 10px;
+  margin-top: 40px;
+}
+
+#signInbtn, #signUpbtn, #button, #logout-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border-radius: 50px;
+  background-color: #252423;
+  color: #fff;
+  cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px;
+}
+
+#signInbtn:hover, #signUpbtn:hover, #logout-button:hover, #button:hover {
+  background-color: #edad0d;
+  color: #000;
+}
+
+/* About Section */
+#About {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+#About h2 {
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+#About p {
+  margin-bottom: 30px;
+  font-size: 1.0rem;
+  line-height: 1.6;
+  color: #dcdcdc;
+  max-width: 700px;
+  text-align: center;
+}
+
+#About ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+#About li {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#About a {
+  color: #0d0d0e;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.5s ease;
+}
+
+#About a:hover {
+  color: #f4b413;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+td {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.highlight {
+  background-color: #fff;
+  font-weight: bold;
+}
+
+/* Dialogs */
+dialog > div:first-child {
+  position: absolute;
+  right: 0.1rem;
+  top: 0;
+}
+
+dialog {
+  justify-self: center;
+}
+
+dialog > div:first-child button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+}
+
+/* Info Section */
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  background-color: #fff;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+div h3 {
+  color: #fff;
+  margin: 5px;
+}
+
+div p {
+  color: #000;
+  margin: 5px;
+}
+
+div ul li {
+  margin: 5px;
+}
+
+/* Map and Table */
+#tablemap {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align items */
+  margin: 20px 0; /* Added margin for spacing */
+}
+
+#map {
+  width: 100%; /* Full width for mobile */
+  height: 50%; /* Adjust height as needed */
+  border: 2px solid #ccc; /* Optional: Add a border for better visibility */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow for depth */
+  margin-bottom: 10px; /* Space between map and name */
+}
+
+#name {
+  color: #fff; /* Text color for the name */
+  margin: 0 30px; /* Margin for spacing */
+  text-align: center; /* Center align text */
+}
+
+/* Buttons for Daily/Weekly Menu */
+#daily-weekly-menu {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 90px;
+}
+
+#show-daily-menu, #show-weekly-menu {
+  background-color: #222;
+  color: #e0e0e0;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 10px;
+}
+
+#show-daily-menu:hover, #show-weekly-menu:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Daily/Weekly Menu Display */
+#weekly-menu, #daily-menu {
+  background-color: #686666;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Close Button for Dialog */
+#close-modal {
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+}
+
+#close-modal:hover {
+  background-color: #edad0d;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #222;
+  color: #e0e0e0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer h3 {
+  font-size: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 15px;
+  }
+
+  #show-daily-menu, #show-weekly-menu {
+    width: 100%;
+  }
+
+  footer h4 {
+    font-size: 12px;
+  }
+
+  .SignBtn {
+    width: 25%;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  #map {
+    height: 60%; /* Adjust height for better visibility on mobile */
+  }
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 15px;
+  }
+
+  #show-daily-menu, #show-weekly-menu {
+    width: 100%;
+  }
+
+  footer h4 {
+    font-size: 12px;
+  }
+
+  .SignBtn {
+    width: 25%;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+}
